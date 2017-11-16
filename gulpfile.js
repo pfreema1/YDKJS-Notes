@@ -8,13 +8,13 @@ gulp.task('watch', function() {
 
     browserSync.init({
         server: {
-            baseDir: "./modules_notes"
+            baseDir: "./Notes_Modules"
         }
     });
 
    
 
-    watch('./modules_notes/*', function() {
+    watch('./Notes_Modules/*', function() {
         browserSync.reload();
 
     });
